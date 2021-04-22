@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+        a{
+            color: rgb(255, 165, 0);
+        }
+        a:hover{
+            text-decoration: none;
+            color: rgb(255, 165, 0);
+        }
+        h3 a{
+            color: rgb(51, 50, 97);
+
+        }
+        h3 a:hover{
+            color: rgb(51, 50, 97);
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text-center">IPL <div id="IPL_Year" style="display: inline;"></div> Live</h1>
+    <div id="recent" class="bg-light pl-5 border-dark ml-5 mr-5 text-center" style="margin-top: 40px;border:2px solid;"></div>
+    <div id="live"></div>
+    <div class="text-center"><button class="btn btn-primary mt-4" onclick="reload()">Refresh</button></div>
+    <script>
+        document.getElementById("IPL_Year").innerHTML = new Date().getFullYear();
+        function getLiveScore(){
+        //window.location.reload();
+        var liveScoreTable = sessionStorage.getItem("liveScoreTable"); 
+        document.getElementById("recent").innerHTML = liveScoreTable;
+        }
+        setInterval(getLiveScore,1000);
+
+        function reload(){
+            window.location.reload();
+        }
+    </script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

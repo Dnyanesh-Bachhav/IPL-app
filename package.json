@@ -1,0 +1,34 @@
+{
+  "name": "app",
+  "productName": "IPL Score",
+  "version": "1.0.0",
+  "description": "My first App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build-installer": "electron-builder"
+  },
+  "build":{
+    "appId": "IPL Score",
+    "win":{
+      "target": ["nsis"],
+      "icon": "img/icon1.png"
+    },
+    "nsis":{
+      "installerIcon": "img/icon1.png",
+      "uninstallerIcon": "img/icon1.png",
+      "uninstallDisplayName": "IPL Score",
+      "license": "License.txt",
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "perMachine": true
+    }
+  },
+  "author": "Dnyanesh Bachhav",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "cheerio": "^1.0.0-rc.3",
+    "request-promise": "^4.2.6"
+  }
+}

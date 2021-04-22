@@ -1,0 +1,11 @@
+Hello, this is first Desktop App created on Code Epic platform, go ahead and enjoy.
+If you like this app then don't forget to support Code Epic channel. You can support Code Epic by 
+subscribing youtube channel. Thank you...!!!
+
+Hello guys welcome back to another video of code epic. In this video I am going to show 
+something amazing and also watch the video till the end because I have something for you.
+Everyone likes to watch live IPL and scores but it is quite hard for destop or laptop users
+to check live IPL and Scores yes there are many resources like cricbuzz, iplt20 and many more
+but what if you have your own app to do that.So with that note lets get into our todays video
+title Have your own app to watch live IPL scores.Let's open this open app, this is not just
+like any other app from the internet. In starting of app you probably gonna watch dashboard of the app.

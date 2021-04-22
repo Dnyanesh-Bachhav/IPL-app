@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text-center">IPL <div id="IPL_Year" style="display: inline;"></div> Record Holders</h1>
+    <div id="recent" style="margin-top: 40px;"></div>
+    <!-- Orange Cap -->
+    <div class="text-center text-warning border-dark bg-light" style="width: 250px;border: 2px solid;margin-left: 200px;">
+    <img src="" alt="" id="orangeCap">
+    <div id="orangeCapData"></div>
+    </div>
+
+    <hr>
+
+    <div class="text-center border-dark bg-light" style="width: 250px;border: 2px solid;margin-left: 200px;color:#6A5ACD">
+    <img src="" alt="" id="purpleCap">
+    <div id="purpleCapData"></div>
+</div>
+    <script>
+        document.getElementById("IPL_Year").innerHTML = new Date().getFullYear();
+        //Orange Cap
+        var img = sessionStorage.getItem("liveTable");
+        var imgId = sessionStorage.getItem("liveTableID");
+        var img2 = "https:" + img.replace("Photo-Missing",imgId);
+        console.log(img2);
+        document.getElementById("orangeCap").src = img2;
+        document.getElementById("orangeCapData").innerHTML = sessionStorage.getItem("orangeCapData");
+
+        //Orange Cap
+        var imgPurple = sessionStorage.getItem("purpleCapHolder");
+        var imgIdPurple = sessionStorage.getItem("purpleCapHolder1");
+        var img2Purple = "https:" + imgPurple.replace("Photo-Missing",imgIdPurple);
+        console.log(img2Purple);
+        document.getElementById("purpleCap").src = img2Purple;
+        document.getElementById("purpleCapData").innerHTML = sessionStorage.getItem("purpleCapData");
+    </script>
+
+    
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

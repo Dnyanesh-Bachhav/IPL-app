@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+nav{
+    background-color: black;
+    height: 100%;
+    width: 250px;  
+}
+.sidebar{
+    position: fixed;
+    width: 250px;
+    height: 100%;
+    left: -250px;
+    background-color: #1e1e1e;
+    transition: left 0.4s ease;
+}
+.display{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.btn1{
+    position: absolute;
+    top: 15px;
+    left: 45px;
+    height: 45px;
+    width: 45px;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: left 0.4s ease;
+}
+.btn1 span
+{
+    color: white;
+    font-size: 28px;
+    line-height: 45px;
+}
+.btn1.click1{
+    left: 256px;
+}
+.btn1.click1 span:before{
+    content: '\f00d';
+}
+.sidebar.show{
+    left: 0px;
+}
+nav ul{
+    list-style-type: none;
+    height: 100%;
+    width: 100%;
+}
+nav ul li{
+    line-height: 50px;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-left: 60px;
+    display: block;
+    width: 100%;
+    font-weight: 500;
+    border-left: 3px solid transparent;
+    transition: 0.4s ease;
+}
+nav ul li a:hover{
+    color: cyan;
+    background: #1e1e1e;
+    border-left-color: cyan;
+    padding-left: 50px;
+}
+nav ul li:last-child{
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+}

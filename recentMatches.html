@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <style>
+        h3 a{
+            color:#1e1e1e;
+        }
+        h3 a:hover{
+            color:#1e1e1e;
+        }
+        a{
+            color: purple;
+        }
+        a:hover{
+            text-decoration: none;
+            color: purple;
+        }
+        span{
+            display: inline-block;
+        }
+        .result__team-name{
+            color: black;
+            font-weight: bold;
+        }
+        .result__links p:first-child{
+            color: brown;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2 class="shadow-lg bg-white text-primary rounded mt-4 p-2 mb-5 text-center" style="width: 500px;margin-left:100px;">Recent Matches</h2>
+    <div class="m-1 border-success" style="border: 2px solid;">
+    <div id="recent" class="bg-white border-dark"></div>
+    <div class="ml-2 pt-2 pb-2 mb-2" style="border-left: 2px solid black"><div id="recentScore" class="bg-light pl-2"></div></div>
+</div>
+<hr>
+<div class="border-success ml-1" style="border: 2px solid;"><div id="match1" class="ml-2 mt-2"></div></div><hr>
+<div class="border-success ml-1" style="border: 2px solid;"><div id="match2" class="ml-2 mt-2"></div></div><hr>
+<div class="border-success ml-1" style="border: 2px solid;"><div id="match3" class="ml-2 mt-2"></div></div><hr>
+<div class="border-success ml-1" style="border: 2px solid;"><div id="match4" class="ml-2 mt-2"></div></div>
+    <script>
+        document.getElementById("recent").innerHTML = sessionStorage.getItem("recent");
+        document.getElementById("recentScore").innerHTML = sessionStorage.getItem("recentScore");
+        document.getElementById("match1").innerHTML = sessionStorage.getItem("recentScore1");
+        document.getElementById("match2").innerHTML = sessionStorage.getItem("recentScore2");
+        document.getElementById("match3").innerHTML = sessionStorage.getItem("recentScore3");
+        document.getElementById("match4").innerHTML = sessionStorage.getItem("recentScore4");
+    </script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
