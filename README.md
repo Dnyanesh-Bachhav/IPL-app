@@ -1,4 +1,4 @@
-# IPL-app
+# IPL-app🏏🏏
 Hey guys this app is made in electron.js.
 In this repository node modules and dist folder is not included
 if you want that too then you can download whole project from link
